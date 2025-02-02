@@ -8,18 +8,18 @@
     margin: auto;
     padding: 0px 140px;
     margin-bottom: 150px;
-    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    background: linear-gradient(180deg, #0056b3 0%, #e1ffea22 60%);
     gap: 30px;
 }
 
 .newsletter h1 {
-    color: #454545;
+    color: #555;
     font-size: 55px;
     font-weight: 600;
 }
 
 .newsletter p {
-    color: #454545;
+    color: #333;
     font-size: 20px;
 }
 
@@ -39,7 +39,7 @@
     margin-left: 30px;
     border: none;
     outline: none;
-    color: #616161;
+    color: #0056b3;
     font-family: 'Poppins';
     font-size: 16px;
 }
@@ -48,7 +48,7 @@
     width: 210px;
     height: 70px;
     border-radius: 80px;
-    background: black;
+    background: #555;
     color: white;
     font-size: 16px;
     cursor: pointer;

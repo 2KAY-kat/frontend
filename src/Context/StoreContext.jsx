@@ -12,7 +12,7 @@ const getDefaultCart = () => {
 }
 
 const StoreContextProvider = (props) => {
-    const  [cartItems,setCartItems] = useState(getDefaultCart());
+    const  [CartItems,setCartItems] = useState(getDefaultCart());
 
     const addToCart = (itemId) => {
         setCartItems((prev) => ({...prev,[itemId]:prev[itemId]+1}));
@@ -22,7 +22,7 @@ const StoreContextProvider = (props) => {
         setCartItems((prev) => ({...prev,[itemId]:prev[itemId]-1}))
     }
 
-    const contextValue = {all_product,cartItems,addToCart,removeFromCart};
+    const contextValue = {all_product,CartItems,addToCart,removeFromCart};
 
     return (
         <StoreContext.Provider value={contextValue}>
