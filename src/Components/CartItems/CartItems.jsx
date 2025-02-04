@@ -60,13 +60,18 @@ const CartItems = () => {
                     </div>
                     <button>PROCEED TO CHECKOUT</button>
                 </div>
-                <div className="cartitems-promocode">
-                    <p>If you have a prom coce enter it here</p>
+                {/* 
+                
+                // this the promo code input box
+
+                 <div className="cartitems-promocode">
+                    <p>If you have a promo code enter it here</p>
                     <div className="cartitems-promobox">
                         <input type="text" placeholder="promo code" />
                         <button>Submit</button>
-                    </div>
+                    </div> 
                 </div>
+                */}
             </div>
 
         </div>
