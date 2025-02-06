@@ -4,7 +4,7 @@ import { StoreContext } from '../../Context/StoreContext'
 import remove_icon from '../Assets/cart_cross_icon.png'
 
 const CartItems = () => {
-    const {all_product,CartItems,removeFromCart} = useContext(StoreContext);
+    const {getTotalCartAmount,all_product,CartItems,removeFromCart} = useContext(StoreContext);
 
     return (
         <div className='cartitems'>
@@ -26,7 +26,7 @@ const CartItems = () => {
                             <p>{e.name}</p>
                             <p>${e.new_price}</p>
                             <button className='cartitems-quantity'>{CartItems[e.id]}</button>
-                            <p>${e.new_price * CartItems[e.id]}</p>
+                            <p>${e.new_price*CartItems[e.id]}</p>
                             <img className='cartitems-remove-icon' src={remove_icon} onClick={() => { removeFromCart(e.id) }} alt="" />
                         </div>
                         <hr />
@@ -43,7 +43,7 @@ const CartItems = () => {
                     <div>
                         <div className="cartitems-total-item">
                             <p>Sub-Total</p>
-                            <p>${0}</p>
+                            <p>${getTotalCartAmount()}</p>
                         </div>
                         <hr />
                         <div className="cartitems-total-item">
@@ -54,7 +54,7 @@ const CartItems = () => {
 
                         <div className="cartitems-total-item">
                             <h3>Total</h3>
-                            <h3>${0}</h3>
+                            <h3>${getTotalCartAmount()}</h3>
                         </div>
 
                     </div>
